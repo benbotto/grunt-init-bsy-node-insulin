@@ -1,10 +1,9 @@
 'use strict';
 
 module.exports = function(verbose) {
-  const glob = require('glob');
-
-  let files = {};
-  let opts;
+  const glob  = require('glob');
+  const files = {};
+  let   opts;
 
   // Application files.
   opts = {

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(grunt, scripts) {
-  let jshint = {
+  const jshint = {
     /* Global options. */
     options: {
       strict:    true,

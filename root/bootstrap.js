@@ -10,8 +10,8 @@ insulin
   .factory('deferred', () => require('deferred'));
 
 // Application (dynamic) dependencies.
-let glob = require('glob');
-let opts = {
+const glob = require('glob');
+const opts = {
   cwd: __dirname,
   ignore: [
     './node_modules/**',
@@ -23,7 +23,7 @@ let opts = {
   ]
 };
 
-let files = glob.sync('./**/*.js', opts);
+const files = glob.sync('./**/*.js', opts);
 
 // Let each file register itself with the DiC.
 files.forEach(require);

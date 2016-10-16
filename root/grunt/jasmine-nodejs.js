@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(grunt, scripts) {
-  let jasmineNode = {
+  const jasmineNode = {
     options: {
       specNameSuffix: 'Spec.js',
       useHelpers:     false,
